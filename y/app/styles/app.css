@@ -1,0 +1,18 @@
+html {
+  background: #fff;
+}
+
+.backfaceVisibility {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+.graph {
+    background-color: black;
+    background-image:
+    linear-gradient(rgba(255, 255, 255, 0.25) 1px, transparent 1px), linear-gradient(white 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1px, transparent 1px), linear-gradient(-30deg, white 1px, transparent 1px), linear-gradient(transparent 3px, black 3px, black 238px, transparent 238px), linear-gradient(90deg, white 3px, transparent 3px, transparent 238px, white 238px);
+    background-size:
+     2400px 240px, 240px 240px
+
+    }
+

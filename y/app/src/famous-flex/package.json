@@ -1,0 +1,100 @@
+{
+  "name": "famous-flex",
+  "version": "0.1.4",
+  "homepage": "https://github.com/IjzerenHein/famous-flex",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/IjzerenHein/famous-flex.git"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "deamdify"
+    ]
+  },
+  "scripts": {
+    "global-no-famous": "browserify global-no-famous.template.js -t browserify-shim -o global-no-famous.js --debug --verbose"
+  },
+  "browserify-shim": {
+    "famous/core/OptionsManager": "global:famous.core.OptionsManager",
+    "famous/utilities/Utility": "global:famous.utilities.Utility",
+    "famous/surfaces/ContainerSurface": "global:famous.surfaces.ContainerSurface",
+    "famous/core/EventHandler": "global:famous.core.EventHandler",
+    "famous/core/Transform": "global:famous.core.Transform",
+    "famous/math/Vector": "global:famous.math.Vector",
+    "famous/core/Group": "global:famous.core.Group",
+    "famous/physics/PhysicsEngine": "global:famous.physics.PhysicsEngine",
+    "famous/physics/forces/Drag": "global:famous.physics.forces.Drag",
+    "famous/physics/forces/Spring": "global:famous.physics.forces.Spring",
+    "famous/inputs/ScrollSync": "global:famous.inputs.ScrollSync",
+    "famous/physics/bodies/Particle": "global:famous.physics.bodies.Particle",
+    "famous/transitions/Transitionable": "global:famous.transitions.Transitionable",
+    "famous/core/Entity": "global:famous.core.Entity",
+    "famous/core/ViewSequence": "global:famous.core.ViewSequence"
+  },
+  "author": {
+    "name": "Hein Rutjes",
+    "email": "hrutjes@gmail.com"
+  },
+  "description": "Flexible scrollview and layout-controller for famo.us",
+  "keywords": [
+    "famo.us",
+    "famous",
+    "flex",
+    "famous-flex",
+    "famousflex",
+    "layoutcontroller",
+    "scrollcontroller",
+    "scrollview",
+    "flexscrollview",
+    "flex-scrollview"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/IjzerenHein/famous-flex/blob/master/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/IjzerenHein/famous-flex/issues"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "brfs": "latest",
+    "browserify": "latest",
+    "browserify-shim": "latest",
+    "deamdify": "latest",
+    "grunt": "latest",
+    "grunt-eslint": "latest",
+    "grunt-jscs": "latest",
+    "grunt-jsdoc-to-markdown": "latest"
+  },
+  "files": [
+    "src",
+    "LICENSE"
+  ],
+  "gitHead": "db249c12f668dc3a89a6b6db60f928274179ca44",
+  "_id": "famous-flex@0.1.4",
+  "_shasum": "54d07c5fa3bcc01bcf3f26a834d28a06f3f8b70a",
+  "_from": "famous-flex@",
+  "_npmVersion": "2.1.8",
+  "_nodeVersion": "0.10.33",
+  "_npmUser": {
+    "name": "ijzerenhein",
+    "email": "hrutjes@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "ijzerenhein",
+      "email": "hrutjes@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "54d07c5fa3bcc01bcf3f26a834d28a06f3f8b70a",
+    "tarball": "http://registry.npmjs.org/famous-flex/-/famous-flex-0.1.4.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/famous-flex/-/famous-flex-0.1.4.tgz"
+}
